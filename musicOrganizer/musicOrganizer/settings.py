@@ -58,7 +58,12 @@ WSGI_APPLICATION = 'musicOrganizer.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'NAME': 'nothereyet',
+	'USER': 'nothereyeteither',
+	'PASSWORD': 'nada',
+	'HOST': 'later',
+	'PORT': 'latertoo',
+
     }
 }
 
