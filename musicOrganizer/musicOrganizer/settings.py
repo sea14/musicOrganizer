@@ -36,6 +36,7 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'musicSheets'
 )
 
 MIDDLEWARE_CLASSES = (
@@ -57,13 +58,8 @@ WSGI_APPLICATION = 'musicOrganizer.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'nothereyet',
-	'USER': 'nothereyeteither',
-	'PASSWORD': 'nada',
-	'HOST': 'later',
-	'PORT': 'latertoo',
-
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
 
