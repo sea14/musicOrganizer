@@ -8,3 +8,6 @@ class sheetMusic(models.Model):
 	difficulty = models.CharField(max_length=50)
 	location = models.CharField(max_length=200)
 
+class location(models.Model):
+	title = models.CharField(max_length=300)
+
